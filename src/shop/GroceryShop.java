@@ -20,8 +20,8 @@ public class GroceryShop extends Shop{
 
     private Map<String,Integer> itemInStock = new HashMap<>();
 
-    public String getStoreHours(){
-        return storeHours;
+    public void getStoreHours(){
+        System.out.println(storeHours);
     }
     @Override
     public void addItemToStock(String itemNane, int quantity) {
