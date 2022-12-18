@@ -4,8 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public abstract class Shop {
-    public abstract void setStoreHours(String storeHours);
-    public abstract void setStoreAddress(String address);
+
     public abstract void getStoreHours();
     public  abstract  void getStoreAddress();
     private Map<String,Integer> itemInStock = new HashMap<>();

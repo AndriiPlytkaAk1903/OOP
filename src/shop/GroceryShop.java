@@ -5,22 +5,19 @@ import java.util.Map;
 
 
 public class GroceryShop extends Shop{
-    private String storeHours;
-    private String storeAddress;
 
-    public void setStoreHours(String storeHours) {
-        this.storeHours = storeHours;
-    }
-
-    public void setStoreAddress(String storeAddress) {
-        this.storeAddress = storeAddress;
-    }
     public void getStoreHours(){
-        System.out.println(storeHours);
+        System.out.println("=======================\n" +
+                "Monday 9:00 - 18:00\n" +
+                "Tuesday 9:00 - 18:00\n" +
+                "Wednesday 8:00 - 19:00\n" +
+                "Thursday 8:00 - 20:00\n" +
+                "Friday 8:00 - 17:00\n" +
+                "=======================");
     }
 
     public void getStoreAddress(){
-        System.out.println(storeAddress);
+        System.out.println("Shevchenka 113, Kyiv, Ukraine");
     }
 
 }
