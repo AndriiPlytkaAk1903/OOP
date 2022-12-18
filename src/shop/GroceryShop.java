@@ -6,10 +6,22 @@ import java.util.Map;
 
 public class GroceryShop extends Shop{
 
-    public Map<String,Integer> itemInStock = new HashMap<>();
+    private String storeHours;
+    private String storeAddress;
+
+    public void setStoreHours(String storeHours) {
+        this.storeHours = storeHours;
+    }
+
+    public void setStoreAddress(String address) {
+        this.storeAddress = address;
+    }
+
+
+    private Map<String,Integer> itemInStock = new HashMap<>();
 
     public String getStoreHours(){
-        return "-----";
+        return storeHours;
     }
     @Override
     public void addItemToStock(String itemNane, int quantity) {
@@ -39,7 +51,7 @@ public class GroceryShop extends Shop{
 
 
     public String getAddress() {
-        return "Ukraine";
+        return storeAddress;
     }
 
 

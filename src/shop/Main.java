@@ -10,7 +10,5 @@ public class Main {
         System.out.println(groceryShop.getStockBalance());
         groceryShop.sellItem("Bread", 20);
         System.out.println(groceryShop.getAddress());
-
-
     }
 }
