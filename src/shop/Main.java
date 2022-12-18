@@ -10,7 +10,7 @@ public class Main {
         groceryShop.sellItem("Bread", 20);
         System.out.println(groceryShop.getStockBalance());
         groceryShop.setStoreAddress("Shevchenka 113, Kyiv, Ukraine");
-        System.out.println(groceryShop.getAddress());
+        groceryShop.getStoreAddress();
         groceryShop.setStoreHours(
                 "=======================\n" +
                 "Monday 9:00 - 18:00\n" +
