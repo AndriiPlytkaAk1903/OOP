@@ -8,7 +8,7 @@ public abstract class Shop {
     public abstract void getStoreHours();
     public  abstract  void getStoreAddress();
     private Map<String,Integer> itemInStock = new HashMap<>();
-    void addItemToStock(String itemNane, int quantity) {
+    public void addItemToStock(String itemNane, int quantity) {
         Integer itemQuantity = itemInStock.get(itemNane);
         if (itemQuantity == null){
             itemInStock.put(itemNane, quantity);
