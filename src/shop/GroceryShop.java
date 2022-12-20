@@ -5,6 +5,26 @@ import java.util.Map;
 
 
 public class GroceryShop extends Shop{
+
+    private String name;
+    private String address;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void getName() {
+        System.out.println(name);
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
     @Override
     public void getStoreHours(){
         System.out.println("=======================\n" +
@@ -17,7 +37,7 @@ public class GroceryShop extends Shop{
     }
     @Override
     public void getStoreAddress(){
-        System.out.println("Shevchenka 113, Kyiv, Ukraine");
+        System.out.println(address);
     }
 
 }
